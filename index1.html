@@ -1,0 +1,242 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="js/nekoAnim.css">
+    <link rel="stylesheet" href="css/swiper.min.css">
+    <link rel="stylesheet" href="css/main.css">
+    <script type="text/javascript">
+        WebFontConfig = {
+            google: {families: ['Open+Sans:400,300,600,700:latin,cyrillic']}
+        };
+        (function () {
+            var wf = document.createElement('script');
+            wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+            wf.type = 'text/javascript';
+            wf.async = 'true';
+            var s = document.getElementsByTagName('script')[0];
+            s.parentNode.insertBefore(wf, s);
+        })();
+    </script>
+    <style>
+        body {
+            font-family: 'Open Sans', sans-serif;
+        }
+    </style>
+</head>
+<body class="activateAppearAnimation">
+<header class="header-001">
+    <nav class="navbar navbar-default">
+        <div class="container">
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse"
+                        data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+                <a class="navbar-brand" href="#">Logo</a>
+            </div>
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li class=""><a href="#">Главная</a></li>
+                    <li class="dropdown">
+                        <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true"
+                           aria-expanded="false">Каталог товаров<span class="caret"></span></a>
+                        <ul class="dropdown-menu">
+                            <li><a href="#">Категория 1</a></li>
+                            <li class="dropdown">
+                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
+                                   aria-haspopup="true"
+                                   aria-expanded="false">Категория 2<span class="caret caret_rotate"></span></a>
+                                <ul class="dropdown-menu category">
+                                    <li><a href="#">Категория 1</a></li>
+                                    <li><a href="#">Категория 2</a></li>
+                                    <li><a href="#">Категория 3</a></li>
+                                </ul>
+                            </li>
+                            <li><a href="#">Категория3</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#">О нашем магазине</a></li>
+                    <li><a href="#">Доставка</a></li>
+                    <li><a href="#">Оплата</a></li>
+                    <li><a href="#">Контакты</a></li>
+                </ul>
+                <div class="navbar-form navbar-right hidden-xs">
+                    <button class="btn btn-default" data-toggle="modal" data-target="#myModal">Заказать
+                        звонок
+                    </button>
+                </div>
+            </div>
+        </div>
+    </nav>
+</header>
+
+<div class="slider-001 hidden-xs">
+    <div class="swiper-container">
+        <div class="swiper-wrapper">
+            <div class="swiper-slide text-center">
+                <img src="img/slider1.jpg" alt="map">
+                <div class="slider-caption">
+                    <h1>Здесь будет Ваш текст</h1>
+                    <h3>Вы можете описать преимущества Ваших услуг или
+                        товара</h3>
+                    <a href="#" class="btn">Кнопка 1</a>
+                    <a href="#" class="btn">Кнопка 2</a>
+                </div>
+            </div>
+            <div class="swiper-slide">
+                <img src="img/slider2.jpg" alt="girl">
+                <div class="slider-caption right">
+                    <h1 class="someselector">Здесь будет Ваш текст</h1>
+                    <h3>Вы можете описать преимущества Ваших услуг или
+                        товара</h3>
+                    <h4>Здесь будет Ваш текст. Вы можете описать
+                        преимущества
+                        Ваших услуг или товара. Здесь будет Ваш текст. Вы
+                        можете описать преимущества Ваших услуг или товара.</h4>
+                    <a href="#" class="btn">Кнопка 1</a>
+                    <a href="#" class="btn">Кнопка 2</a>
+                </div>
+            </div>
+        </div>
+
+        <!-- Add Pagination -->
+        <div class="swiper-pagination"></div>
+        <!-- Add Arrows -->
+        <div class="swiper-button-next"></div>
+        <div class="swiper-button-prev"></div>
+    </div>
+</div>
+<footer class="footer">
+    <div class="footer-top">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-12 col-sm-6 col-md-4 col-lg-4">
+                    <h4>Информация о компании</h4>
+                    <p>Здесь будет Ваш текст. Вы можете описать преимущества Ваших услуг или товара, добавить интересную
+                        информацию для
+                        посетителей сайта. Здесь будет Ваш текст.</p>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-3 col-lg-offset-1">
+                    <h4>контактная информация</h4>
+                    <ul>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i><span>8 (800) 800-00-00</span></li>
+                        <li><i class="fa fa-phone" aria-hidden="true"></i><span>8 (800) 800-00-00</span></li>
+                        <li><i class="fa fa-envelope" aria-hidden="true"></i><span>mail@mail.ru</span></li>
+                        <li><i class="fa fa-clock-o" aria-hidden="true"></i><span>Пн-Вс: 10:00 - 21:00</span></li>
+                        <li><i class="fa fa-map" aria-hidden="true"></i><span>СПб, пр. Косыгина 31,к.1</span></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-2 col-lg-2 fz-12">
+                    <h4>Каталог</h4>
+                    <ul>
+                        <li><a href="#">Категория товаров 1</a></li>
+                        <li><a href="#">Категория товаров 2</a></li>
+                        <li><a href="#">Категория товаров 3</a></li>
+                        <li><a href="#">Категория товаров 4</a></li>
+                        <li><a href="#">Категория товаров 5</a></li>
+                    </ul>
+                </div>
+                <div class="col-xs-12 col-sm-6 col-md-3 col-lg-2 fz-12">
+                    <h4>Информация</h4>
+                    <ul>
+                        <li><a href="#">Полезная информация 1</a></li>
+                        <li><a href="#">Полезная информация 2</a></li>
+                        <li><a href="#">Полезная информация 3</a></li>
+                        <li><a href="#">Полезная информация 4</a></li>
+                        <li><a href="#">Полезная информация 5</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer-bottom">
+        <div class="container">
+            <div class="row">
+                <div class="col-xs-5 col-md-5 col-lg-7 copyright">
+                    <p>
+                        @ МАГАЗИН 2017. Все права защищены.
+                    </p>
+                </div>
+                <div class="col-xs-3 col-md-3 col-lg-2 social">
+
+                    <a href="#" class="icon-social text-center">
+                        <span class="fa fa-facebook"></span>
+                    </a>
+
+                    <a href="#" class="icon-social text-center">
+                        <span class="fa fa-vk"></span>
+                    </a>
+
+                    <a href="#" class="icon-social text-center">
+                        <span class="fa fa-instagram"></span>
+                    </a>
+                    </ul>
+                </div>
+                <div class="col-xs-4 col-md-4 col-lg-3 maker">
+                    <p>
+                        Разработано в:
+                        <a href="http://rosait.ru/">
+                            <img src="img/ros.png" alt="logo">
+                        </a>
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+</footer>
+
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog" aria-labelledby="myModalLabel">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content text-center">
+            <div class="modal-header">
+                <h3 class="modal-title" id="myModalLabel">Свяжитесь с нами</h3>
+                <p>Свяжитесь с нашей службой поддержки клиентов, если у Вас есть какие-либо вопросы.</p>
+            </div>
+            <div class="modal-body">
+                <form>
+                    <div>
+                        <input type="text" placeholder="Ваше имя">
+                    </div>
+                    <div>
+                        <input type="email" placeholder="Email">
+                    </div>
+                    <div>
+                        <textarea placeholder="Ваше сообщение"></textarea>
+                    </div>
+                </form>
+            </div>
+            <div class="modal-footer">
+                <input type="checkbox" id="agree">
+                <label for="agree">
+                    Даю своё согласие на обработку персональных данных в соответствии с
+                    <a href="#"> пользовательским
+                        соглашением</a>
+                </label>
+                <button type="button" class="btn btn-primary">Отправить сообщение</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
+<script src="js/modernizr-2.6.1.min.js"></script>
+<script src="js/jquery.appear.js"></script>
+<script src="js/custom.js"></script>
+<script src="js/bootstrap.min.js"></script>
+<script src="js/swiper.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/handle.js"></script>
+<script src="js/checkForm.js"></script>
+<script src="js/anime.js"></script>
+
+</body>
+</html>
