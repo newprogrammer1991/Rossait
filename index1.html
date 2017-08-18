@@ -3,14 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <title>Title</title>
-    <link rel="stylesheet" href="css/font-awesome.min.css">
     <link rel="stylesheet" href="css/bootstrap.min.css">
-    <link rel="stylesheet" href="js/nekoAnim.css">
-    <link rel="stylesheet" href="css/swiper.min.css">
     <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/nekoAnim.css">
+    <link rel="stylesheet" href="css/font-awesome.min.css">
     <script type="text/javascript">
         WebFontConfig = {
-            google: {families: ['Open+Sans:400,300,600,700:latin,cyrillic']}
+            google: {families: ['Open+Sans:400,300,600,700,800:latin,cyrillic']}
         };
         (function () {
             var wf = document.createElement('script');
@@ -52,7 +51,7 @@
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button"
                                    aria-haspopup="true"
-                                   aria-expanded="false">Категория 2<span class="caret caret_rotate"></span></a>
+                                   aria-expanded="false">Категория 2<span class="caret caret_rotate pull-right"></span></a>
                                 <ul class="dropdown-menu category">
                                     <li><a href="#">Категория 1</a></li>
                                     <li><a href="#">Категория 2</a></li>
@@ -76,44 +75,58 @@
         </div>
     </nav>
 </header>
-
 <div class="slider-001 hidden-xs">
-    <div class="swiper-container">
-        <div class="swiper-wrapper">
-            <div class="swiper-slide text-center">
-                <img src="img/slider1.jpg" alt="map">
-                <div class="slider-caption">
-                    <h1>Здесь будет Ваш текст</h1>
-                    <h3>Вы можете описать преимущества Ваших услуг или
-                        товара</h3>
-                    <a href="#" class="btn">Кнопка 1</a>
-                    <a href="#" class="btn">Кнопка 2</a>
+    <div id="carousel" class="carousel slide" data-ride="carousel">
+        <ol class="carousel-indicators">
+            <li data-target="#carousel" data-slide-to="0" class="active"></li>
+            <li data-target="#carousel" data-slide-to="1"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item item1 active" style="background: url('img/slider1.jpg'); background-size: cover;">
+                <div class="carousel-caption">
+                    <h1 data-nekoanim="fadeInUp" data-nekodelay="100">Здесь будет Ваш
+                        текст</h1>
+                    <h2 data-nekoanim="fadeInUp" data-nekodelay="300">Вы можете описать
+                        преимущества Ваших услуг или товара</h2>
+                    <div class="carousel-caption-buttons" data-nekoanim="fadeInUp"
+                         data-nekodelay="500">
+                        <button class="btn">Кнопка 1</button>
+                        <button class="btn">Кнопка 2</button>
+                    </div>
                 </div>
             </div>
-            <div class="swiper-slide">
-                <img src="img/slider2.jpg" alt="girl">
-                <div class="slider-caption right">
-                    <h1 class="someselector">Здесь будет Ваш текст</h1>
-                    <h3 data-nekoanim="fadeInUp" data-nekodelay="10">Вы можете описать преимущества Ваших услуг или
-                        товара</h3>
-                    <h4>Здесь будет Ваш текст. Вы можете описать
-                        преимущества
-                        Ваших услуг или товара. Здесь будет Ваш текст. Вы
-                        можете описать преимущества Ваших услуг или товара.</h4>
-                    <a href="#" class="btn">Кнопка 1</a>
-                    <a href="#" class="btn">Кнопка 2</a>
+            <div class="item item2" style="background: url('img/slider2.jpg'); background-size: cover;">
+                <div class="container">
+                    <div class="carousel-caption">
+                        <h1 data-nekoanim="fadeInUp" data-nekodelay="100">Здесь будет Ваш
+                            текст</h1>
+                        <h2 data-nekoanim="fadeInUp" data-nekodelay="300">Вы можете описать
+                            преимущества Ваших услуг</h2>
+                        <p data-nekoanim="fadeInUp" data-nekodelay="400">Здесь будет Ваш
+                            текст. Вы можете описать преимущества Ваших услуг или товара. Здесь будет Ваш текст. Вы
+                            можете описать преимущества Ваших услуг или товара. </p>
+                        <div class="carousel-caption-buttons" data-nekoanim="fadeInUp"
+                             data-nekodelay="700">
+                            <button class="btn">Кнопка 1</button>
+                            <button class="btn">Кнопка 2</button>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
-
-        <!-- Add Pagination -->
-        <div class="swiper-pagination"></div>
-        <!-- Add Arrows -->
-        <div class="swiper-button-next"></div>
-        <div class="swiper-button-prev"></div>
+        <div class="carousel-control-block">
+            <a class="left carousel-control" href="#carousel" data-slide="prev">
+                <i class="fa fa-angle-left fa-3x"></i>
+            </a>
+            <a class="right carousel-control" href="#carousel" data-slide="next">
+                <i class="fa fa-angle-right fa-3x "></i>
+            </a>
+        </div>
     </div>
 </div>
-<footer class="footer">
+
+
+<footer class="footer-001">
     <div class="footer-top">
         <div class="container">
             <div class="row">
@@ -159,12 +172,12 @@
     <div class="footer-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-xs-5 col-md-5 col-lg-7 copyright">
+                <div class="col-xs-12 col-md-5 col-lg-7 copyright">
                     <p>
                         @ МАГАЗИН 2017. Все права защищены.
                     </p>
                 </div>
-                <div class="col-xs-3 col-md-3 col-lg-2 social">
+                <div class="col-xs-12 col-md-3 col-lg-2 social">
 
                     <a href="#" class="icon-social text-center">
                         <span class="fa fa-facebook"></span>
@@ -177,9 +190,8 @@
                     <a href="#" class="icon-social text-center">
                         <span class="fa fa-instagram"></span>
                     </a>
-                    </ul>
                 </div>
-                <div class="col-xs-4 col-md-4 col-lg-3 maker">
+                <div class="col-xs-12 col-md-4 col-lg-3 maker">
                     <p>
                         Разработано в:
                         <a href="http://rosait.ru/">
@@ -189,7 +201,6 @@
                 </div>
             </div>
         </div>
-    </div>
     </div>
 </footer>
 
@@ -227,16 +238,15 @@
 </div>
 
 
-<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js"></script>
-<script src="js/modernizr-2.6.1.min.js"></script>
-<script src="js/jquery.appear.js"></script>
-<script src="js/custom.js"></script>
-<script src="js/bootstrap.min.js"></script>
-<script src="js/swiper.js"></script>
-<script src="js/slider.js"></script>
-<script src="js/handle.js"></script>
-<script src="js/checkForm.js"></script>
-<script src="js/anime.js"></script>
+<script type="text/javascript" src="js/jquery-3.2.1.min.js"></script>
+<script type="text/javascript" src="js/bootstrap.js"></script>
+<script type="text/javascript" src="js/modernizr-2.6.1.min.js"></script>
+<script type="text/javascript" src="js/jquery.appear.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script type="text/javascript" src="js/jquery-ui-1.8.23.custom.min.js"></script>
+<script type="text/javascript" src="js/jquery.mobile.custom.min.js"></script>
+<script type="text/javascript" src="js/slider.js"></script>
+
 
 </body>
 </html>
