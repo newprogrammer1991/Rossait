@@ -1,0 +1,73 @@
+.footer-001 ul {
+    list-style-type: none;
+}
+
+.footer-001 h4 {
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+    border-bottom: 1px solid #ddd;
+    text-transform: uppercase;
+    font-weight: 700;
+    font-size: 14px;
+    color: #212121;
+}
+
+.footer-001 footer a {
+    color: #424242;
+}
+
+.footer-001 .footer-top ul {
+    padding-left: 0;
+    margin-top: 17px;
+}
+
+.footer-001 .footer-top li {
+    padding: 5px 1px;
+}
+
+.footer-001 .footer-top li i {
+    padding-right: 8px;
+}
+
+.footer-001 .footer-top .fz-12 a {
+    font-size: 12px;
+}
+
+.footer-001 .footer-bottom {
+    background-color: #e3e3e3;
+}
+
+.footer-001 .footer-bottom .icon-social {
+    display: inline-block;
+    width: 28px;
+    height: 28px;
+    padding-top: 6px;
+    border: 1px solid #b5b5b5;
+    border-radius: 50%;
+    background-color: #b5b5b5;
+    color: #e3e3e3;
+    font-size: 0;
+    box-sizing: border-box;
+}
+
+.footer-001 .footer-bottom .icon-social:hover {
+    background-color: #424242;
+}
+
+.footer-001 .footer-bottom .icon-social span {
+    font-size: 15px;
+}
+
+.footer-001 .footer-bottom .copyright p {
+    padding-top: 19px;
+    font-size: 12px;
+}
+
+.footer-001 .footer-bottom .social {
+    padding-top: 13px;
+}
+
+.footer-001 .footer-bottom .maker p {
+    padding-top: 19px;
+    font-size: 12px;
+}
